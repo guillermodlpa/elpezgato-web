@@ -1,0 +1,13 @@
+/**
+ * Source https://github.com/zamarrowski/react-ionicons/blob/26dc7898c0acd479f3f20ad62835c9726a220ee8/src/LocationSharp.js#L6
+ */
+export default function LocationSharpIcon(
+  props: JSX.IntrinsicElements["svg"] & { title?: string }
+) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
+      {props.title ? <title>{props.title}</title> : null}
+      <path d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1164-64 64.07 64.07 0 01-64 64z" />
+    </svg>
+  );
+}
