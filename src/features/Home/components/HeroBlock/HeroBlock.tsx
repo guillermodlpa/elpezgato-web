@@ -5,16 +5,17 @@ import {
   ADDRESS_NUMBER,
   ADDRESS_STREET,
 } from "@/constants/address";
+import GOOGLE_MAPS_URL from "@/constants/googleMapsUrl";
 import NextImage from "next/image";
 
 export default function HeroBlock() {
   return (
-    <section className="bg-gray-900 w-full relative pt-[40vh]">
+    <section className="bg-gray-900 w-full relative min-h-[80vh] flex justify-center items-end">
       <NextImage
         alt="Interior del bar El Pez Gato"
         src="/bar_el_pez_gato_mural.jpg"
         fill
-        style={{ objectFit: "cover" }}
+        className="object-cover"
       />
 
       <Container
@@ -31,12 +32,14 @@ export default function HeroBlock() {
           />
           <h1 className="text-4xl  mb-2 font-bold">El Pez Gato</h1>
           <h2 className="text-3xl mb-6">Bar Musical</h2>
-          <p className="flex align-center justify-center text-center">
-            {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}
-            <LocationSharpIcon
-              className="w-5 h-5 ml-1 fill-white inline-block"
-              title="Pin de ubicación"
-            />
+          <p className="text-center">
+            <a href={GOOGLE_MAPS_URL} rel="noopener">
+              {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}
+              <LocationSharpIcon
+                className="w-5 h-5 ml-1 mb-1 fill-white inline-block"
+                title="Pin de ubicación"
+              />
+            </a>
           </p>
         </div>
       </Container>

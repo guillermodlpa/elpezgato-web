@@ -13,15 +13,15 @@ export const buttonStyles: {
 } = {
   solid: {
     primary:
-      "text-white hover:text-white bg-primary-500 hover:bg-primary-600 active:bg-primary-700 focus-visible:ring-primary-700",
+      "text-black hover:text-black bg-primary-500 hover:bg-primary-600 active:bg-primary-700 focus-visible:ring-primary-700 no-underline",
     secondary:
-      "text-white hover:text-white bg-secondary-900 hover:bg-secondary-800 active:bg-secondary-700 focus-visible:ring-secondary-700",
+      "text-black hover:text-black bg-secondary-900 hover:bg-secondary-800 active:bg-secondary-700 focus-visible:ring-secondary-700 no-underline",
     tertiary:
-      "text-white hover:text-white bg-tertiary-900 hover:bg-tertiary-800 active:bg-tertiary-700 focus-visible:ring-tertiary-700",
+      "text-black hover:text-black bg-tertiary-900 hover:bg-tertiary-800 active:bg-tertiary-700 focus-visible:ring-tertiary-700 no-underline",
     whiteAlpha:
-      "text-white hover:text-white bg-transparent bg-opacity-25 hover:bg-opacity-50 active:bg-opacity-75 focus-visible:ring-primary-300",
+      "text-white hover:text-white bg-transparent bg-opacity-25 hover:bg-opacity-50 active:bg-opacity-75 focus-visible:ring-primary-300 no-underline",
     blackAlpha:
-      "text-black hover:text-black bg-white bg-opacity-25 hover:bg-opacity-50 active:bg-opacity-75 focus-visible:ring-primary-300",
+      "text-black hover:text-black bg-white bg-opacity-25 hover:bg-opacity-50 active:bg-opacity-75 focus-visible:ring-primary-300 no-underline",
   },
   ghost: {
     primary:
@@ -38,7 +38,7 @@ export const buttonStyles: {
 };
 
 export const baseClassNames =
-  "relative inline-flex items-center px-4 py-2 text-sm text-center rounded-lg focus:outline-none transition-colors font-medium";
+  "relative inline-flex items-center px-8 py-3 text-lg text-center rounded-lg focus:outline-none transition-colors font-medium";
 
 const badgeClassName =
   "after:content_[''] after:absolute after:top-0 after:right-0 after:w-2 after:h-2 after:bg-primary-500 after:rounded-full";

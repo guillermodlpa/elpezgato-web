@@ -6,6 +6,7 @@ import {
   ADDRESS_NUMBER,
   ADDRESS_STREET,
 } from "@/constants/address";
+import GOOGLE_MAPS_URL from "@/constants/googleMapsUrl";
 import Image from "next/image";
 
 export default function AboutBlock() {
@@ -13,7 +14,7 @@ export default function AboutBlock() {
     <ContentSection>
       <Container>
         {/* 2 columns on desktop, thinner first for image and then text */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
           <div className="flex justify-center items-center">
             <Image
               src={"/bar_el_pez_gato_FLYER_OFERTA_JUEVES_REGRESOALFUTURO.png"}
@@ -44,7 +45,7 @@ export default function AboutBlock() {
         </div>
 
         {/* 2 columns on desktop, first one with description of the neightbourhood and second with an image of street map */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex justify-center items-center">
             <div className="">
               <h2 className="text-3xl text-center font-bold mb-4">
@@ -55,23 +56,27 @@ export default function AboutBlock() {
                 de Madrid. Es un barrio con mucha vida, lleno de bares y
                 restaurantes, y muy cerca de la Gran Vía.
               </p>
-              <p className="text-lg flex align-center justify-center text-center">
-                {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}
-                <LocationSharpIcon
-                  className="w-5 h-5 ml-1 fill-white inline-block"
-                  title="Pin de ubicación"
-                />
+              <p className="text-lg text-center">
+                <a href={GOOGLE_MAPS_URL} rel={"noopener"}>
+                  {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}
+                  <LocationSharpIcon
+                    className="w-5 h-5 ml-1 fill-white inline-block mb-1"
+                    title="Pin de ubicación"
+                  />
+                </a>
               </p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Image
-              src={"/bar_el_pez_gato_mapa_malasana.png"}
-              alt="Mapa de Malasaña"
-              width={300}
-              height={300}
-              className="object-cover object-top"
-            />
+            <a href={GOOGLE_MAPS_URL} rel={"noopener"}>
+              <Image
+                src={"/bar_el_pez_gato_mapa.png"}
+                alt="Mapa de Madrid con pin en El Pez Gato"
+                width={300}
+                height={300}
+                className="object-cover object-top"
+              />
+            </a>
           </div>
         </div>
       </Container>

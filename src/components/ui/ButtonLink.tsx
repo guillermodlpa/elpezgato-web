@@ -25,7 +25,7 @@ export default function ButtonLink({
       {...linkProps}
       className={`${baseClassNames} ${
         buttonStyles[variant][colorScheme] ?? ""
-      } ${linkProps.className}`}
+      } ${linkProps.className ?? ""}`}
     />
   );
 }

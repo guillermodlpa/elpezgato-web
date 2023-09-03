@@ -7,7 +7,7 @@ export default function ContentSection({
   children: React.ReactNode;
 }) {
   return (
-    <section className="border-b w-full border-divider py-16">
+    <section className="border-b w-full border-divider py-24">
       {children}
     </section>
   );
