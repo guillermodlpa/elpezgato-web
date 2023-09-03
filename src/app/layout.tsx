@@ -3,8 +3,18 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import SiteFooter from "@/components/SiteFooter/SiteFooter";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const interFont = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const chulapaFont = localFont({
+  src: [
+    { path: "../fonts/Chulapa-Light.otf", weight: "100" },
+    { path: "../fonts/Chulapa-Regular.otf", weight: "400" },
+    { path: "../fonts/Chulapa-Bold.otf", weight: "700" },
+  ],
+  display: "swap",
+  variable: "--font-chulapa",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col`}>
+      <body
+        className={`${interFont.variable} ${chulapaFont.variable} flex flex-col`}
+      >
         <SiteHeader />
         <main className="grow">{children}</main>
         <SiteFooter />

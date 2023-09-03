@@ -26,8 +26,8 @@ export default function SiteFooter() {
                 />
               </div>
               <div>
-                <h1 className="text-xl font-bold">El Pez Gato</h1>
-                <h2 className="text-lg ">Bar Musical</h2>
+                <h1 className="text-xl">El Pez Gato</h1>
+                <h2 className="text-sm font-light">Bar Musical</h2>
               </div>
             </div>
             <p className="text-center mb-2">

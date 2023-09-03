@@ -20,7 +20,7 @@ export default function HeroBlock() {
 
       <Container
         className="z-10 relative bg-black mb-4 pb-8 pt-6"
-        maxWidth="max-w-xs"
+        maxWidth="max-w-sm"
       >
         <div className="text-center">
           <NextImage
@@ -30,8 +30,8 @@ export default function HeroBlock() {
             height={150}
             className="mb-6 mx-auto"
           />
-          <h1 className="text-4xl  mb-2 font-bold">El Pez Gato</h1>
-          <h2 className="text-3xl mb-6">Bar Musical</h2>
+          <h1 className="text-5xl mb-2">El Pez Gato</h1>
+          <h2 className="text-2xl mb-6 font-light">Bar Musical</h2>
           <p className="text-center">
             <a href={GOOGLE_MAPS_URL} rel="noopener">
               {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}

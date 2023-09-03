@@ -12,8 +12,8 @@ export default function HeaderLogo() {
         />
       </div>
       <div>
-        <h1 className="text-3xl font-bold">El Pez Gato</h1>
-        <h2 className="text-xl ">Bar Musical</h2>
+        <h1 className="text-3xl">El Pez Gato</h1>
+        <h2 className="text-lg font-light">Bar Musical</h2>
       </div>
     </div>
   );
