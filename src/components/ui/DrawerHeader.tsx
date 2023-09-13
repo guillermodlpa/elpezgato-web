@@ -13,12 +13,12 @@ export default function DrawerHeader({
   return (
     <div
       {...rest}
-      className={`w-full sticky top-0 z-10 bg-white p-4 border-b flex flex-shrink-0 items-center shadow-sm ${rest.className}`}
+      className={`w-full sticky top-0 z-10 bg-backgroundDefault p-4 border-b border-divider flex flex-shrink-0 items-center justify-end shadow-sm ${rest.className}`}
     >
       {heading && (
         <h3
           id="drawer-label"
-          className="inline-flex items-center text-xl font-medium text-gray-900 flex-grow"
+          className="inline-flex items-center text-xl font-medium text-textPrimary flex-grow"
         >
           {heading}
         </h3>

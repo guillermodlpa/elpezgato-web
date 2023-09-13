@@ -3,30 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --color-backgroundDefault: 0 , 0, 0;
+  --color-textPrimary: 255, 255, 255;
 }
 
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 } */ 
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--color-textPrimary));
+  background: rgb(var(--color-backgroundDefault));
   
   min-height: 100dvh;
-  font-family: var(--font-inter);
+  font-family: var(--font-inter); 
 }
 
 a {
@@ -39,4 +32,4 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-chulapa);
-}
+} 

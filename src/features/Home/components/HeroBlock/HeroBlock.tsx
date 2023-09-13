@@ -19,7 +19,7 @@ export default function HeroBlock() {
       />
 
       <Container
-        className="z-10 relative bg-black mb-4 pb-8 pt-6"
+        className="z-10 relative bg-backgroundDefault mb-4 pb-8 pt-6"
         maxWidth="max-w-sm"
       >
         <div className="text-center">

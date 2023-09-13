@@ -1,3 +1,4 @@
+import SectionHeading from "@/components/SectionHeading";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import ContentSection from "@/components/ui/ContentSection";
@@ -7,7 +8,7 @@ export default function ProgrammingBlock() {
   return (
     <ContentSection>
       <Container>
-        <h2 className="text-5xl text-center mb-6">Programación</h2>
+        <SectionHeading>Programación</SectionHeading>
         <p
           className="text-center max-w-xl mx-auto text-lg mb-16"
           // @ts-ignore

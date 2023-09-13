@@ -16,7 +16,9 @@ export default function Container({
     | "max-w-2xl"
     | "max-w-3xl"
     | "max-w-4xl"
-    | "max-w-5xl";
+    | "max-w-5xl"
+    | "max-w-6xl"
+    | "max-w-7xl";
 }) {
   return (
     <Component className={`mx-auto ${maxWidth} px-8 py-4  ${className}`}>

@@ -23,6 +23,8 @@ const config: Config = {
           800: "#ebebeb",
           900: "#e6e6e6",
         },
+        backgroundDefault: "#000000",
+        textPrimary: "#ffffff",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -32,6 +34,9 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         serif: ["var(--font-chulapa)"],
+      },
+      zIndex: {
+        drawer: "60",
       },
     },
   },

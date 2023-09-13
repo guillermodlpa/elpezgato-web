@@ -26,7 +26,9 @@ export default function AboutBlock() {
           </div>
           <div className="flex justify-center items-center">
             <div className="">
-              <h2 className="text-3xl text-center mb-4">Sobre nosotros</h2>
+              <h2 className="text-2xl sm:text-3xl text-center mb-4">
+                Sobre nosotros
+              </h2>
               <p className="text-lg mb-2">
                 El Pez Gato es un bar musical situado en el centro de Madrid.
                 Ofrecemos una amplia variedad de bebidas y cócteles, así como
@@ -46,7 +48,9 @@ export default function AboutBlock() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex justify-center items-center">
             <div className="">
-              <h2 className="text-3xl text-center mb-4">Nuestro barrio</h2>
+              <h2 className="text-2xl sm:text-3xl text-center mb-4">
+                Nuestro barrio
+              </h2>
               <p className="text-lg mb-8">
                 El Pez Gato está situado en el barrio de Malasaña, en el centro
                 de Madrid. Es un barrio con mucha vida, lleno de bares y

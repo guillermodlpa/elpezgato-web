@@ -1,3 +1,4 @@
+import PageHeading from "@/components/PageHeading";
 import Container from "@/components/ui/Container";
 import { PATH_CONTACT } from "@/constants/paths";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import Link from "next/link";
 export default function Reservations() {
   return (
     <Container className="my-12">
-      <h1 className="text-5xl text-center mb-6">Reservas</h1>
+      <PageHeading>Reservas</PageHeading>
 
       <p
         className="text-center max-w-xl mx-auto text-lg mb-8"

@@ -10,7 +10,7 @@ const IconButton = forwardRef<
     colorScheme?: ButtonColorScheme;
     isRound?: boolean;
     hasBadge?: boolean;
-    size?: "sm" | "md";
+    size?: "sm" | "md" | "lg";
   }
 >(function IconButtonInner(
   {
@@ -24,7 +24,8 @@ const IconButton = forwardRef<
   },
   ref
 ) {
-  const dimensionClasses = size === "md" ? "h-7 w-7" : "h-5 w-5";
+  const dimensionClasses =
+    size === "lg" ? "h-10 w-10" : size === "md" ? "h-7 w-7" : "h-5 w-5";
 
   return (
     <Button

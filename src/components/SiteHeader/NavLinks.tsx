@@ -1,5 +1,6 @@
 import {
   PATH_CONTACT,
+  PATH_HOME,
   PATH_PROGRAMMING,
   PATH_RESERVATIONS,
 } from "@/constants/paths";
@@ -7,19 +8,51 @@ import InstagramColoredIcon from "../icons/InstagramColoredLogo";
 import { INSTAGRAM_URL } from "@/constants/urls";
 import Link from "next/link";
 
-export default function NavLinks() {
+export default function NavLinks({
+  onClickLink,
+  showHomeLink = true,
+}: {
+  onClickLink?: () => void;
+  showHomeLink?: boolean;
+}) {
   return (
     <>
-      <Link className="no-underline" href={PATH_PROGRAMMING}>
+      {showHomeLink && (
+        <Link
+          className="no-underline hover:underline"
+          href={PATH_HOME}
+          onClick={onClickLink}
+        >
+          Inicio
+        </Link>
+      )}
+      <Link
+        className="no-underline hover:underline"
+        href={PATH_PROGRAMMING}
+        onClick={onClickLink}
+      >
         Programación
       </Link>
-      <Link className="no-underline" href={PATH_RESERVATIONS}>
+      <Link
+        className="no-underline hover:underline"
+        href={PATH_RESERVATIONS}
+        onClick={onClickLink}
+      >
         Reservas
       </Link>
-      <Link className="no-underline" href={PATH_CONTACT}>
+      <Link
+        className="no-underline hover:underline"
+        href={PATH_CONTACT}
+        onClick={onClickLink}
+      >
         Contacto
       </Link>
-      <a className="no-underline" href={INSTAGRAM_URL}>
+
+      <a
+        className="no-underline inline-flex justify-center align-center"
+        href={INSTAGRAM_URL}
+        onClick={onClickLink}
+      >
         <InstagramColoredIcon height={50} width={50} />
       </a>
     </>

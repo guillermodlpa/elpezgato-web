@@ -1,3 +1,4 @@
+import PageHeading from "@/components/PageHeading";
 import EmailIcon from "@/components/icons/EmailIcon";
 import InstagramColoredIcon from "@/components/icons/InstagramColoredLogo";
 import Container from "@/components/ui/Container";
@@ -7,7 +8,7 @@ import { INSTAGRAM_URL } from "@/constants/urls";
 export default function Contact() {
   return (
     <Container className="my-12">
-      <h1 className="text-5xl text-center mb-6">Contacto</h1>
+      <PageHeading>Contacto</PageHeading>
 
       <p
         className="text-center max-w-xl mx-auto text-lg mb-16"

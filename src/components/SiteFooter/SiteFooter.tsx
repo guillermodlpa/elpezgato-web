@@ -13,7 +13,7 @@ import NavLinks from "../SiteHeader/NavLinks";
 export default function SiteFooter() {
   return (
     <footer className="border-divider border-t">
-      <Container>
+      <Container maxWidth="max-w-7xl">
         <div className="flex justify-between items-center py-4">
           <div>
             <div className="flex items-center mb-4">

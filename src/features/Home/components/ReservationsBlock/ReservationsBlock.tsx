@@ -1,3 +1,4 @@
+import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/ui/Button";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
@@ -9,7 +10,7 @@ export default function ReservationsBlock() {
   return (
     <ContentSection>
       <Container maxWidth="max-w-3xl">
-        <h2 className="text-5xl text-center mb-6">Reservas</h2>
+        <SectionHeading>Reservas</SectionHeading>
         <p
           className="text-center max-w-2xl mx-auto text-lg mb-16"
           // @ts-ignore
