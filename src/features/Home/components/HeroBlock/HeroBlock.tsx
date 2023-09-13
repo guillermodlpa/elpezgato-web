@@ -10,7 +10,7 @@ import NextImage from "next/image";
 
 export default function HeroBlock() {
   return (
-    <section className="bg-gray-900 w-full relative min-h-[80vh] flex justify-center items-end">
+    <section className="bg-gray-900 w-full relative min-h-[80svh] flex justify-center items-end">
       <NextImage
         alt="Interior del bar El Pez Gato"
         src="/bar_el_pez_gato_mural.jpg"
