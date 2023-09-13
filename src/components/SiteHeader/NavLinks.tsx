@@ -53,7 +53,7 @@ export default function NavLinks({
         href={INSTAGRAM_URL}
         onClick={onClickLink}
       >
-        <InstagramColoredIcon height={50} width={50} />
+        <InstagramColoredIcon height={30} width={30} />
       </a>
     </>
   );

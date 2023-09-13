@@ -20,7 +20,7 @@ export default function Programming() {
 
       <div className="mb-2 text-center">
         <ButtonLink href={INSTAGRAM_URL} className="text-xl">
-          <InstagramColoredIcon width="1.5em" height="1.5em" className="mr-1" />
+          <InstagramColoredIcon width={25} height={25} className="mr-2" />
           Ver la programación en Instagram
         </ButtonLink>
       </div>

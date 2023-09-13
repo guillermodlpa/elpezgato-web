@@ -31,8 +31,8 @@ export default function Contact() {
       <p className="text-lg  max-w-2xl mx-auto text-center">
         <a href={INSTAGRAM_URL}>
           <InstagramColoredIcon
-            height={"2em"}
-            width={"2em"}
+            height={25}
+            width={25}
             className="inline-block"
           />
           {INSTAGRAM_URL}
