@@ -58,7 +58,7 @@ export default function Drawer({
       <Transition
         appear
         show={isOpen}
-        enter="duration-75"
+        enter="duration-200"
         enterFrom="translate-x-full"
         enterTo="translate-x-0"
         leave="duration-150"
