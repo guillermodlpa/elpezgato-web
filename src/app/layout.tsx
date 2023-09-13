@@ -41,6 +41,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="grow">{children}</main>
         <SiteFooter />
+        <div id="modal" />
       </body>
     </html>
   );
