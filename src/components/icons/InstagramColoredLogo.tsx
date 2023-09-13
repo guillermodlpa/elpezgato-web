@@ -1,7 +1,7 @@
+import { memo } from "react";
+
 // https://www.logo.wine/logo/Instagram?logo=Glyph-Color
-export default function InstagramColoredIcon(
-  props: JSX.IntrinsicElements["svg"]
-) {
+function InstagramColoredIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -90,3 +90,5 @@ export default function InstagramColoredIcon(
     </svg>
   );
 }
+
+export default memo(InstagramColoredIcon);

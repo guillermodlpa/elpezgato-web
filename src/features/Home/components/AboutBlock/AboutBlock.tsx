@@ -35,10 +35,10 @@ export default function AboutBlock() {
                 actuaciones en directo de música en vivo.
               </p>
               <p className="text-lg mb-2">
-                La historia de El Pez Gato se remonta a 2019, cuando el bar
-                abrió sus puertas por primera vez. Desde entonces, ha sido un
-                lugar de encuentro para los amantes de la música y la noche
-                madrileña.
+                La historia de El Pez Gato se remonta a 2020, en plena pandemia
+                cuando el bar abrió sus puertas por primera vez. Desde entonces,
+                ha sido un lugar de encuentro para los amantes de la música y la
+                noche madrileña.
               </p>
             </div>
           </div>

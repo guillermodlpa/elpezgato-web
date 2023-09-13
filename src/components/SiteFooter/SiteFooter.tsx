@@ -14,7 +14,7 @@ export default function SiteFooter() {
   return (
     <footer className="border-divider border-t">
       <Container maxWidth="max-w-7xl">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-4 gap-8 md:gap-4 flex-col md:flex-row">
           <div>
             <div className="flex items-center mb-4">
               <div className="mr-4">
@@ -42,7 +42,7 @@ export default function SiteFooter() {
             <p>{CONTACT_EMAIL}</p>
           </div>
 
-          <div className="flex flex-wrap gap-6 items-center">
+          <div className="flex flex-wrap gap-6 items-center justify-center">
             <NavLinks />
           </div>
         </div>

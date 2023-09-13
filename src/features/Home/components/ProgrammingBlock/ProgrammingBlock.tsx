@@ -1,8 +1,10 @@
 import SectionHeading from "@/components/SectionHeading";
+import InstagramColoredIcon from "@/components/icons/InstagramColoredLogo";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import ContentSection from "@/components/ui/ContentSection";
 import { PATH_PROGRAMMING } from "@/constants/paths";
+import { INSTAGRAM_URL } from "@/constants/urls";
 
 export default function ProgrammingBlock() {
   return (
@@ -19,8 +21,13 @@ export default function ProgrammingBlock() {
         </p>
 
         <div className="mb-2 text-center">
-          <ButtonLink href={PATH_PROGRAMMING} className="text-xl">
-            Ver toda la programación
+          <ButtonLink href={INSTAGRAM_URL} className="text-xl">
+            <InstagramColoredIcon
+              width="1.5em"
+              height="1.5em"
+              className="mr-1"
+            />
+            Ver la programación en Instagram
           </ButtonLink>
         </div>
       </Container>
