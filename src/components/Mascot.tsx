@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const INITIAL_DELAY = 1000;
 const TIME_SHOWING = 5000;
-const DELAY_BETWEEN_SHOWS = 10000;
+const DELAY_BETWEEN_SHOWS = 25000;
 
 export default function Mascot() {
   const [visible, setVisible] = useState(false);
