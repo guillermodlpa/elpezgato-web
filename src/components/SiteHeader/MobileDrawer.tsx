@@ -1,14 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import LinesClipboardIcon from "../icons/LinesClipboardIcon";
 import Drawer from "../ui/Drawer";
 import DrawerBody from "../ui/DrawerBody";
-import DrawerFooter from "../ui/DrawerFooter";
 import DrawerHeader from "../ui/DrawerHeader";
 import IconButton from "../ui/IconButton";
-import HeaderLogo from "./HeaderLogo";
 import NavLinks from "./NavLinks";
+import BarsIcon from "../icons/BarsIcon";
 
 export default function MobileDrawer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +14,7 @@ export default function MobileDrawer() {
   return (
     <>
       <IconButton
-        icon={<LinesClipboardIcon />}
+        icon={<BarsIcon />}
         aria-label="Abrir menú"
         variant="ghost"
         colorScheme="whiteAlpha"

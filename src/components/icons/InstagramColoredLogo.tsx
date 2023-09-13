@@ -6,6 +6,8 @@ function InstagramColoredIcon(props: JSX.IntrinsicElements["svg"]) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-8.093805 -13.489675 70.14631 80.93805"
+      width="24"
+      height="24"
       {...props}
     >
       <title>Instagram</title>
