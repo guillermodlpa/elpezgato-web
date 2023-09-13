@@ -30,8 +30,8 @@ export default function HeroBlock() {
             height={150}
             className="mb-6 mx-auto"
           />
-          <h1 className="text-5xl mb-2">El Pez Gato</h1>
-          <h2 className="text-2xl mb-6 font-light">Bar Musical</h2>
+          <h1 className="text-4xl md:text-5xl mb-2">El Pez Gato</h1>
+          <h2 className="text-xl md:text-2xl mb-6 font-light">Bar Musical</h2>
           <p className="text-center">
             <a href={GOOGLE_MAPS_URL} rel="noopener">
               {`${ADDRESS_STREET} ${ADDRESS_NUMBER}, ${ADDRESS_CITY}`}

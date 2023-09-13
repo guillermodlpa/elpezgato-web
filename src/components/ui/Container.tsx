@@ -21,7 +21,7 @@ export default function Container({
     | "max-w-7xl";
 }) {
   return (
-    <Component className={`mx-auto ${maxWidth} px-8 py-4  ${className}`}>
+    <Component className={`mx-auto ${maxWidth} px-6 md:px-8 py-4 ${className}`}>
       {children}
     </Component>
   );
