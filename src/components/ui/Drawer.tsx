@@ -27,11 +27,11 @@ export default function Drawer({
 
   useEffect(() => {
     if (isOpen) {
-      if (typeof window != "undefined" && window.document) {
-        document.body.style.overflow = "hidden";
+      if (typeof window !== "undefined" && window.document) {
+        window.document.body.style.overflow = "hidden";
       }
     } else {
-      document.body.style.overflow = "unset";
+      window.document.body.style.overflow = "unset";
     }
   }, [isOpen]);
 
