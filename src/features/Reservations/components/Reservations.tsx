@@ -9,6 +9,15 @@ export default function Reservations() {
     <Container className="my-12">
       <PageHeading>Reservas</PageHeading>
 
+      <div className="flex justify-center mb-4">
+        <Image
+          src="/artifice.gif"
+          alt="Fuego artificial"
+          width={50}
+          height={50}
+        />
+      </div>
+
       <p
         className="text-center max-w-xl mx-auto text-lg mb-8"
         // @ts-ignore
