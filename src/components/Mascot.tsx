@@ -41,10 +41,10 @@ export default function Mascot() {
       <Transition
         appear
         show={visible}
-        enter="duration-500"
+        enter="duration-1000"
         enterFrom="translate-x-full"
         enterTo="translate-x-0"
-        leave="duration-500"
+        leave="duration-300"
         leaveFrom="translate-x-0"
         leaveTo="translate-x-full"
         className={`fixed bottom-0 right-0 z-drawer transition-transform`}
