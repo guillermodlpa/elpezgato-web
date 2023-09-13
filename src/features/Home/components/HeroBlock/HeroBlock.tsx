@@ -15,6 +15,7 @@ export default function HeroBlock() {
         alt="Interior del bar El Pez Gato"
         src="/bar_el_pez_gato_mural.jpg"
         fill
+        priority
         className="object-cover"
       />
 
@@ -29,6 +30,7 @@ export default function HeroBlock() {
             width={150}
             height={150}
             className="mb-6 mx-auto"
+            priority
           />
           <h1 className="text-4xl md:text-5xl mb-2">El Pez Gato</h1>
           <h2 className="text-xl md:text-2xl mb-6 font-light">Bar Musical</h2>
