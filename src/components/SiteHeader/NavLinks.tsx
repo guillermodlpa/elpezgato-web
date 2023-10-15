@@ -1,6 +1,7 @@
 import {
   PATH_CONTACT,
   PATH_HOME,
+  PATH_MENU,
   PATH_PROGRAMMING,
   PATH_RESERVATIONS,
 } from "@/constants/paths";
@@ -32,6 +33,13 @@ export default function NavLinks({
         onClick={onClickLink}
       >
         Programación
+      </Link>
+      <Link
+        className="no-underline hover:underline"
+        href={PATH_MENU}
+        onClick={onClickLink}
+      >
+        Carta
       </Link>
       <Link
         className="no-underline hover:underline"
