@@ -43,12 +43,13 @@ function Product({
 export default function Menu() {
   return (
     <div
+      className="py-12"
       style={{
         backgroundImage:
           "linear-gradient(120deg, rgb(30,0,60) 0%, rgb(10,0,20) 50%, rgba(34,0,68) 100%)",
       }}
     >
-      <Container className="py-12 text-sha" maxWidth="max-w-sm">
+      <Container maxWidth="max-w-sm">
         <PageHeading>Carta</PageHeading>
 
         <div className="pt-8">
